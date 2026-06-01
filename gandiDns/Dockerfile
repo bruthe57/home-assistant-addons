@@ -1,6 +1,4 @@
-ARG BUILD_FROM
-# hadolint ignore=DL3006
-FROM ${BUILD_FROM}
+FROM ghcr.io/home-assistant/base:latest
 
 COPY updater.sh /
 RUN chmod a+x /updater.sh
